@@ -121,7 +121,7 @@ jobs:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           with:
             upload_url: ${{ steps.create_release_step.outputs.upload_url }}
-            asset_path: appload-aarch64.zip
+            asset_path: appload-aarch64.zip/appload-aarch64.zip
             asset_name: appload-aarch64.zip
             asset_content_type: application/octet-stream
 
@@ -131,6 +131,6 @@ jobs:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           with:
             upload_url: ${{ steps.create_release_step.outputs.upload_url }}
-            asset_path: appload-arm32.zip
+            asset_path: appload-arm32.zip/appload-arm32.zip
             asset_name: appload-arm32.zip
             asset_content_type: application/octet-stream
